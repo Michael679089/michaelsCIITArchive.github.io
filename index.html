@@ -12,30 +12,26 @@
         }
         body {
             font-family: Times New Roman, serif;
+            scroll-behavior: smooth;
+        }
+        .landing, .about {
+            width: 100vw;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
         }
         .landing {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            height: 100vh;
-        }
-        .landing h1 {
-            font-size: 42px;
-            font-weight: bold;
-            text-align: center;
+            background-color: white;
         }
         .about {
-            width: 100vw;
-            height: 100vh;
-            padding: 20px;
-            text-align: center;
             background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        .about img {
+            width: 300px; /* Adjust size */
+            height: auto;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -45,7 +41,8 @@
     </div>
     <div class="about">
         <p>About this archive...</p>
-        <p> Sample Website for the sample facebook </p>
+        <p>Sample Website for the sample Facebook</p>
+        <img src="https://via.placeholder.com/300" alt="Sample Image">
     </div>
 </body>
 </html>
